@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Axel-Paint</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="nav-logo">Axel-Paint</div>
+        <div class="nav-link">
+          <!-- Grid options -->
+          <div class="grid-option">10</div>
+          <div class="grid-option">20</div>
+          <div class="grid-option">50</div>
+          <div class="grid-option">100</div>
+          <div class="grid-option">250</div>
+          <div class="grid-option">500</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="sketch-options">
+          <p class="selected-grid">
+            Selected Grid Size: <span id="grid-size">0</span>
+          </p>
+          <div>
+            <label for="color-selector">Select Color: </label>
+            <input name="color-selector" id="color-selector" type="color" />
+          </div>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <!-- This will hold the dynamically generated grid -->
+        <div class="sketch-box"></div>
+      </div>
+
+      <div class="footer">
+        <p>Copyright @ Axel Cortez - The Odin</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
